@@ -1,0 +1,20 @@
+/*
+The program illustrate the biggest number of random three problem
+In  program (int)(Math.random()*100) this part indicate the random number between 0 to 100
+and 1+(int)(Math.random()*100) indicate the random between  1 to 100
+ */
+
+import java.lang.*;
+
+public class Main {
+   public static void main(String[] args) {
+      int a = 1 + (int)(Math.random()*100);
+      int b = 1 + (int)(Math.random()*100);
+      int c = 1 + (int)(Math.random()*100);
+      System.out.println(a+ " "+b+ " "+c);
+
+      int bigInThree = (a>b && a>c) ? a : (b>c ? b : c);
+
+      System.out.println(bigInThree);
+   }
+}
