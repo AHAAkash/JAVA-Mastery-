@@ -1,0 +1,17 @@
+import java.lang.*;
+import java.util.Scanner;
+public class Swaptwonum {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    System.out.print("Input first number:");
+    int a = in.nextInt();
+    System.out.print("Input second number:");
+    int b = in.nextInt();
+    
+    a = a^b;
+    b = a^b; //b= (a^b)^b
+    a = a^b; 
+
+    System.out.println("Swapable Numbers :"+a+ "  " +b);
+  }
+}
